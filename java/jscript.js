@@ -1,48 +1,20 @@
-$(document).ready(function(event) {
-  $("#formOne").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var life1Input = $("input#life1").val();
-    var eat1Input= $("input#eat1").val();
-    var dreamsInput = $("input#dreams").val();
-    var habitsInput = $("input#habits").val();
-    var seeInput = $("input#see").val();
+$(document).ready(function() {
+  $("form#language-Form").submit(function(event) {
+    var age = parseInt($("input#age").val());
+    var gender = $("select#gender").val();
+    var eyeColor = $("select#EyeColor").val();
 
-    $(".person1").text(person1Input);
-    $(".life1").text(life1Input);
-    $(".eat1").text(eat1Input);
-    $(".dreams").text(dreamsInput);
-    $(".habits").text(habitsInput);
-    $(".see").text(seeInput);
+    var quote = "is "
+    if (gender === 'male' && age < 26 && eyeColor === 'Brown') {
+      quote += 'Sting';
+    }
+    if (gender === 'female' && age > 26 && eyeColor === 'Green') {
+      quote += 'Brittany Spears';
+    }
 
-    $("#story").show();
+    $("#rate").text(quote);
+    $("#quote").show()
 
     event.preventDefault();
-
-  });
-});
-
-
-$(document).ready(function() {
-  $("button#Ja").click(function() {
-    $("body").removeClass();
-    $("body").addClass("script");
-  });
-
-  $("button#Ru").click(function() {
-    $("body").removeClass();
-    $("body").addClass("ruby");
-  });
-
-  $("button#C").click(function() {
-    $("body").removeClass();
-    $("body").addClass("sharp");
-  });
-});
-
-
-$(document).ready(function() {
-  $("p").click(function() {
-    $(".gone").toggle().slideDown();
-
   });
 });
