@@ -11,3 +11,8 @@ h1 {
   font-family:;
   font-size: 18px;
 }
+
+.hideme {
+  display: none;
+
+}
