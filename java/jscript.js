@@ -1,18 +1,20 @@
 // Business Logic
-function myResults(score) {
+function myResults(sum) {
 
-  if (score >= 40 && score <= 20) {
+  if (sum >= 1 && sum <= 20) {
     $('#sharp').show();
-  } else if (score >= 30 && score <= 35) {
+  } else if (sum >= 11 && sum <= 15) {
     $('#ruby').show();
-  } else if (score >= 10 && score <= 20) {
+  } else if (sum >= 6 && sum <= 10) {
     $('#JS').show();
   } else {
+
     $('#sharp').show();
     $('#ruby').show();
     $('#JS').show();
   }
 }
+
 
 
 
@@ -31,8 +33,9 @@ $(document).ready(function () {
 
 
     $('#sumpullsfrom').hide();
+      myResults(total);
 
-myResults(total);
-    $('#hideme').show()
+    $('#hideme').show(myResults)
+
 });
 });
