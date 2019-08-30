@@ -1,11 +1,11 @@
 // Business Logic
-function myResults(sum) {
+function myResults(score) {
 
-  if (sum >= 40 && sum <= 20) {
+  if (score >= 40 && score <= 20) {
     $('#sharp').show();
-  } else if (sum >= 30 && sum <= 35) {
+  } else if (score >= 30 && score <= 35) {
     $('#ruby').show();
-  } else if (sum >= 10 && sum <= 20) {
+  } else if (score >= 10 && score <= 20) {
     $('#JS').show();
   } else {
     $('#sharp').show();
@@ -13,9 +13,6 @@ function myResults(sum) {
     $('#JS').show();
   }
 }
-
-
-
 
 
 
@@ -31,8 +28,11 @@ $(document).ready(function () {
     var learn = parseInt($('input:radio[name=learn]:checked').val());
     var total = tvshow + leo + pdx + learn ;
 
+
+
     $('#sumpullsfrom').hide();
 
-  myResults(total);
-    });
-  });
+myResults(total);
+    $('#hideme').show()
+});
+});

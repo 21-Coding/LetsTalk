@@ -12,7 +12,7 @@ h1 {
   font-size: 18px;
 }
 
-.hideme {
+#hideme {
   display: none;
 
 }
