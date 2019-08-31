@@ -24,10 +24,10 @@ $(document).ready(function () {
   $('#sumpullsfrom').submit(function (event) {
     event.preventDefault();
 
-    var tvshow = parseInt($('input:option[name=tvshow]:checked').val());
-    var leo = parseInt($('input:option[name=leo]:checked').val());
-    var pdx = parseInt($('input:option[name=pdx]:checked').val());
-    var learn = parseInt($('input:option[name=learn]:checked').val());
+    var tvshow = parseInt($('input:radio[name=tvshow]:checked').val());
+    var leo = parseInt($('input:radio[name=leo]:checked').val());
+    var pdx = parseInt($('input:radio[name=pdx]:checked').val());
+    var learn = parseInt($('input:radio[name=learn]:checked').val());
     var total = tvshow + leo + pdx + learn ;
 
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
       myResults(total);
 
-
+    $('#hideme').show();
 
 });
 });
