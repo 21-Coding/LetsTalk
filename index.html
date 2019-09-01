@@ -16,44 +16,65 @@
 
 <!--  -->
 
-<form id="sumpullsfrom" action="index.html" method="post">
 
 <!-- radio buttons -->
-    <div class="jumbotron">
-
+  <div id="questions">
+  <form id="sumpullsfrom" action="index.html" method="post">
 
 <!-- questionOne -->
+      <div class="container">
       <h1>Pick the funniest character on "That 70's Show": </h1>
-      <div class="">
+
       <select>
 
-        <option input="radio" name="tvshow" value="1">Fez</option>
-        <option input="radio" name="tvshow" value="2">Hyde</option>
-        <option input="radio" name="tvshow" value="3">Donna</option>
-        <option input="radio" name="tvshow" value="4">Kelso</option>
+        <div class="select">
+        <option input="select" name="tvshow" value="empty">Select Here</option>
+        </div>
+
+        <div class="select">
+        <option input="select" name="tvshow" value="fez">Fez</option>
+        </div>
+
+
+        <div class="select">
+        <option input="select" name="tvshow" value="hyde">Hyde</option>
+        </div>
+
+
+        <div class="select">
+        <option input="select" name="tvshow" value="donna">Donna</option>
+        </div>
+
+
+        <div class="select">
+        <option input="select" name="tvshow" value="kelso">Kelso</option>
+        </div>
+
       </select>
-    </div>
 
 
 <!-- questionTwo -->
       <h1>Pick the best Leonardo Di Caprio Movie: </h1>
 
-
       <select>
-        <div class="radio">
-        <option input="radio" name="Leo" value="1">Inception</option>
+        <div class="select">
+        <option input="select" name="Leo" value="empty">Select Here</option>
         </div>
 
-        <div class="radio">
-        <option input="radio" name="Leo" value="2">Catch Me If You Can</option>
+        <div class="select">
+        <option input="select" name="Leo" value="incept">Inception</option>
         </div>
 
-        <div class="radio">
-        <option input="radio" name="Leo" value="3">Friday</option>
+        <div class="select">
+        <option input="select" name="Leo" value="catch">Catch Me If You Can</option>
         </div>
 
-        <div class="radio">
-        <option input="radio" name="Leo" value="4">The Mack</option>
+        <div class="select">
+        <option input="radio" name="Leo" value="friday">Friday</option>
+        </div>
+
+        <div class="select">
+        <option input="radio" name="Leo" value="mack">The Mack</option>
         </div>
 
       </select>
@@ -61,59 +82,69 @@
 
 
 <!-- questionThree -->
+
       <h1>What best describes the weather in Portland, OR: </h1>
 
-      <select>
-
-        <div class="">
-        <option input="radio" name="pdx" value="1">Cold</option>
-        </div>
-
-        <div class="">
-        <option input="radio" name="pdx" value="2">Dreary</option>
+        <select>
+        <div class="select">
+        <option input="select" name="pdx" value="empty">Select Here</option>
         </div>
 
 
-        <div class="">
-        <option input="radio" name="pdx" value="3">All the above.</option>
+        <div class="select">
+        <option input="select" name="pdx" value="cold">Cold</option>
+        </div>
+
+        <div class="select">
+        <option input="select" name="pdx" value="dreary">Dreary</option>
+        </div>
+
+        <div class="select">
+        <option input="select" name="pdx" value="all">All the above.</option>
         </div>
 
 
-        <div class="">
-        <option input="radio" name="pdx" value="4">No particular weather just and assortment of random climates that coincide into one year long climate essentially.</option>
+        <div class="select">
+        <option input="select" name="pdx" value="many">No particular weather just and assortment of random climates that coincide into one year long climate essentially.</option>
         </div>
-      </select>
-
+    </select>
 
 <!-- questionFour -->
 
-      <h1>How would you learn to code?</h1>
 
+<h1>How would you learn to code?</h1>
       <select>
-        <div class="">
-        <option input="radio" name="learn" value="1">Watch tutorials on youtube.</option>
+
+        <div class="select">
+        <option input="select" name="learn" value="empty">Select Here</option>
+        </div>
+
+        <div class="select">
+        <option input="select" name="learn" value="watch">Watch tutorials on youtube.</option>
         </div>
 
 
-        <div class="">
-        <option input="radio" name="learn" value="2">Join a study group and groupthink.</option>
+        <div class="select">
+        <option input="select" name="learn" value="join">Join a study group and groupthink.</option>
         </div>
 
 
-        <div class="">
-        <option inputinput="radio" ="radio" name="learn" value="3">Spend some time on www.freecodecamp.org.</option>
+        <div class="select">
+        <option input="select" name="learn" value="spend">Spend some time on www.freecodecamp.org.</option>
         </div>
 
 
-        <div class="">
-        <option input="radio" name="learn" value="4">Join A coding bootcamp !</option>
+        <div class="select">
+        <option input="select" name="learn" value="bootcamp">Join A coding bootcamp !</option>
         </div>
+
       </select>
-
-
-      <button type="submit" name="button">Submit</button>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-success"name="button">Submit</button>
   </div>
-</form>
+  </form>
+</div>
 
 
 <!--The results from the survey will show here -->
