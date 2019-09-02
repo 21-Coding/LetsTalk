@@ -1,58 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-
-
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jscript.js"></script>
+
+    <meta charset="utf-8">
     <title>Code Identity</title>
   </head>
+
   <body>
+    <!-- form element -->
+    <div class="container">
+      <form id="assess">
+        <div class="form-group">
 
-<!-- bit Moji -->
-    <center><img class="hover" src="https://render.bitstrips.com/v2/cpanel/9c926aa2-5dc3-48ad-8aff-6d0f8933ee4c-44d7b22f-0ade-4e99-b742-e3502dd5fefc-v1.png?transparent=1&palette=1"></center>
-
-<!--  -->
-
-
-<!-- radio buttons -->
-  <div id="questions">
-  <form id="sumpullsfrom" action="index.html" method="post">
-
-
-<!--The results from the survey will show here -->
-
-<div id="hideme">
-  <h1>Here are your results!</h1>
-
-        <!-- 1st result -->
-        <div id="sharp" class="sharp">
-        <h2>C#</h2>
-        <p>C# is the best !<a href="">link insertion</a>.</p>
         </div>
-        <!--  -->
+        <h3>Choose your favorite time of day</h3>
+
+        <select class="time" name="" id="time">
+
+          <option value="1">Morning</option>
+          <option value="2">Noon</option>
+          <option value="3">Evening</option>
+
+        </select>
+
+        <h3>Choose your favorite season</h3>
+
+        <select class="season" name="" id="season">
+
+          <option value="1">Fall</option>
+          <option value="2">Spring</option>
+          <option value="3">Summer</option>
+
+        </select>
+
+        <h3>Choose your favorite holiday</h3>
+
+        <select class="holiday" name="" id="holiday">
+
+          <option value="1">Christmas</option>
+          <option value="2">4th of July</option>
+          <option value="3">Easter</option>
+
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-warning"name="button">Go!</button>
 
 
 
-        <!-- 2nd result -->
-          <div id="ruby" class="ruby">
-          <h2>Ruby</h2>
-          <p> <a href="">link</a> insertion.</p>
+        <!-- results element -->
+
+        <div class="results" id="ruby">
+          <h1>You should try Ruby!</h1>
         </div>
-        <!--  -->
+
+        <div class="results" id="JS">
+          <h1>You should try JavaScript!</h1>
+        </div>
+
+        <div class="results" id="CSharp">
+          <h1>You should try C#!</h1>
+        </div>
 
 
-
-        <!-- 3rd result -->
-        <div id="JS" class="JS">
-          <h2>JavaScript</h2>
-          <p> JS <a href="https://www.javascript.com/">link</a>.</p>
-        <!--  -->
-
-
-<!-- results end -->
+      </form>
+    </div>
+    <!-- form element -->
 
 
 
