@@ -1,10 +1,13 @@
-p,
+p {
+  text-align: center;
+}
 label {
     font: 1rem 'Fira Sans', sans-serif;
 }
 
 body {
   background-color: beige;
+
 }
 input {
     margin: .4rem;
@@ -25,4 +28,18 @@ h1 {
 .ruby, .JS, .CSharp, .none {
   display: none;
 
+}
+
+.head {
+  font-family: monospace;
+  font-size: 100px;
+  text-align: center;
+
+}
+
+.zoo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
