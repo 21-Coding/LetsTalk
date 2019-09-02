@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jscript.js"></script>
 
@@ -13,69 +13,79 @@
   <body>
     <!-- form element -->
     <div class="container">
-      <form id="assess">
+      <h1>Code Identity</h1>
+      <p>Here at Code Identity we can tell exactly what type of code you should study! Fill out one of our questionaires below.</p>
+      <form id="formIdentity">
         <div class="form-group">
-
+          <label for="name">Name</label>
+          <input id="name" class="for" type="text">
         </div>
-        <h3>Choose your favorite time of day</h3>
 
-        <select class="time" name="" id="time">
-
-          <option value="1">Morning</option>
-          <option value="2">Noon</option>
-          <option value="3">Evening</option>
-
+        <div class="form-group">
+        <label for="time">Choose your favorite time of day</label></h3>
+        <select id="time" class="form-control" type="text">
+          <option value="0">Undecided</option>
+          <option value="2">Morning</option>
+          <option value="4">Noon</option>
+          <option value="6">Evening</option>
         </select>
+      </div>
 
-        <h3>Choose your favorite season</h3>
 
-        <select class="season" name="" id="season">
-
-          <option value="1">Fall</option>
-          <option value="2">Spring</option>
-          <option value="3">Summer</option>
-
+      <div class="form-group">
+        <label for="season">Choose your favorite season</label>
+        <select id="season" class="form-control" type="text">
+          <option value="0">Undecided</option>
+          <option value="2">Fall</option>
+          <option value="4">Spring</option>
+          <option value="6">Summer</option>
         </select>
+      </div>
 
-        <h3>Choose your favorite holiday</h3>
-
-        <select class="holiday" name="" id="holiday">
-
-          <option value="1">Christmas</option>
-          <option value="2">4th of July</option>
-          <option value="3">Easter</option>
-
+      <div class="form-group">
+        <label for="holiday">Choose your favorite holiday</label>
+        <select id="holiday" class="form-control" type="text">
+          <option value="0">Undecided</option>
+          <option value="2">Christmas</option>
+          <option value="4">4th of July</option>
+          <option value="6">Easter</option>
         </select>
+      </div>
         <br>
         <br>
-        <button type="submit" class="btn btn-warning"name="button">Go!</button>
-
+        <button type="submit" class="btn btn-warning" name="button">Go!</button>
+      </form>
+    </div>
+        <!-- form element -->
+      <br>
+      <br>
 
 
         <!-- results element -->
+      <div class="jumbotron">
 
-        <div class="results" id="ruby">
-          <h1>You should try Ruby!</h1>
+        <div class="ruby">
+          <img src="img/Ruby.png" alt="Ruby on Rails">
+          <p><span class="text"></span>, you should try Ruby on Rails, this is Ruby! These are her Rails!</p>
         </div>
 
-        <div class="results" id="JS">
+        <div class="JS">
           <h1>You should try JavaScript!</h1>
+          <img src="img/JS1.png" alt="JavaScript">
+          <p><span class="text"></span>, you seem to be leaning towards a JavaScript future!</p>
         </div>
 
-        <div class="results" id="CSharp">
+        <div class="CSharp">
           <h1>You should try C#!</h1>
+          <img src="img/CSharp.png" alt="CSharp">
+          <p><span class="text"></span>, CSharp is good fit for you!</p>
         </div>
 
-
-      </form>
-    </div>
-    <!-- form element -->
-
-
-
-
-
-
-
+        <div class="none">
+          <h1>No can do! Try again.</h1>
+          <img src="img/nocando.jpg" alt="nodice">
+          <p><span class="text"></span>, I really didnt see this coming. This is pretty awkward.</p>
+        </div>
+      </div>
   </body>
 </html>

@@ -3,6 +3,9 @@ label {
     font: 1rem 'Fira Sans', sans-serif;
 }
 
+body {
+  background-color: beige;
+}
 input {
     margin: .4rem;
 }
@@ -12,7 +15,14 @@ h1 {
   font-size: 18px;
 }
 
-.results {
+.jumbotron {
+  text-align: center;
+  background-color: beige;
+}
+
+
+
+.ruby, .JS, .CSharp, .none {
   display: none;
 
 }

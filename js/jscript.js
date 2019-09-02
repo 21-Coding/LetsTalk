@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("form#assess").submit(function(event) {
+  $("form#formIdentity").submit(function(event) {
     event.preventDefault();
     var name = $("#name").val();
     var time = parseInt($("#time").val());
@@ -9,9 +9,23 @@ $(document).ready(function(){
     var results = time + season + holiday;
 
 
-    if (results < 2){
-      $("")
-    } )
+    if (results > 5 ){
+      $(".ruby").show();
+      $(".JS, .CSharp, .none").hide();
+    } else if (results > 10){
+      $(".JS").show();
+      $(".CSharp, .ruby, .none").hide();
 
-  })
-})
+    } else if (results > 15){
+      $(".CSharp").show();
+      $(".ruby, .none, .JS").hide();
+
+    } else {
+      $(".none").show();
+      $(".CSharp, .ruby, .JS").hide();
+    }
+
+   $(".text").text(name);
+
+ });
+});
