@@ -8,15 +8,15 @@ $(document).ready(function(){
 
     var results = time + season + holiday;
 
-
-    if (results > 5 ){
+    console.log(results);
+    if (results > 0 && results <= 6 ){
       $(".ruby").show();
       $(".JS, .CSharp, .none").hide();
-    } else if (results > 10){
+    } else if (results >= 7 && results <= 12){
       $(".JS").show();
       $(".CSharp, .ruby, .none").hide();
 
-    } else if (results > 15){
+    } else if (results > 12){
       $(".CSharp").show();
       $(".ruby, .none, .JS").hide();
 
