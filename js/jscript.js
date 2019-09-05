@@ -18,7 +18,7 @@ $(document).ready(function(){
       $(".JS").show();
       $(".CSharp, .ruby, .none").hide();
 
-    } else if (results >= 25){
+    } else if (results >= 26){
       $(".CSharp").show();
       $(".ruby, .none, .JS").hide();
 
