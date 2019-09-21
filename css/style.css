@@ -6,21 +6,40 @@ label {
 }
 
 body {
-  background-color: beige;
+  background: url('../img/form2.png');
+  background-position: center;
+
+
+}
+
+option {
+
+}
+.container {
+  width:250px;
+  height: 250px;
+  align: center;
+  background-color: white;
+  overflow: scroll;
 
 }
 input {
     margin: .4rem;
+    font: yellow;
+
 }
 
 h1 {
   font-family:;
   font-size: 18px;
+  color: red;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: beige;
+  background-color: transparent;
+
+  display: none;
 }
 
 
