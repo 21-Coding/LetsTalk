@@ -12,17 +12,23 @@ body {
 
 }
 
+.bg-dark {
+  color:;
+}
 
 
 
 .container {
   width:250px;
-  height: 400px;
+  height: 407px;
   align: center;
   background-color: mediumpurple;
   overflow: scroll;
   opacity: 0.9;
-  color: white;
+  color: lightgrey;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
 }
 input {
     margin: .4rem;
