@@ -19,9 +19,9 @@ body {
   width:250px;
   height: 250px;
   align: center;
-  background-color: black;
+  background-color: mediumpurple;
   overflow: scroll;
-  opacity: 0.5;
+  opacity: 0.9;
   color: white;
 }
 input {
