@@ -17,7 +17,7 @@ body {
 
 .container {
   width:250px;
-  height: 250px;
+  height: 400px;
   align: center;
   background-color: mediumpurple;
   overflow: scroll;
@@ -40,7 +40,7 @@ h1 {
   text-align: center;
   background-color: transparent;
 
-  display: none;
+  /* display: none; */
 }
 
 
