@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application shows different coding languages, allows user to enter alias, lifestyle, diet, aspirations, habits, outlook. User then recieves output._
+_This application shows different coding languages, allows user to enter alias, lifestyle, diet, aspirations, habits, outlook. User then receives output._
 
 ## Setup/Installation Requirements
 
@@ -27,7 +27,7 @@ _Please reach out to me at ddyoumans@icloud.com for any further explanations to 
 
 ## Technologies Used
 
-_The technologies used within this project are Atom, HTML, CSS, and Bitmoji._
+_The technologies used within this project are Atom, HTML, CSS._
 
 ### License
 
