@@ -1,6 +1,9 @@
 p {
   text-align: center;
 }
+
+
+
 label {
     font: 1rem 'Fira Sans', sans-serif;
 }
@@ -13,17 +16,38 @@ body {
 
 }
 
+
+
+
 .outcome {
-  display: block;
+  align-self: center;
+  width: 600px;
+  height: 237px;
+  text-align: left;
+  background: url("../img/gram.jpg");
+  background-size: 100% 100%;
+  color: black;
+  overflow: hidden;
+  display: none;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+
+
 }
+
+
 .right {
   float: right;
   background: url('../img/purp2.gif');
   width:550px;
   height: 507px;
+  margin: inherit;
   border-style: solid;
   border-width: 10px;
   border-color: black;
+  opacity: 0.9;
   background-repeat: repeat-x;
 
 
@@ -46,85 +70,40 @@ body {
   border-style: solid;
   border-width: 10px;
   border-color: black;
+
 }
 input {
     margin: .4rem;
-    font: yellow;
+
 
 }
 
 h1 {
   font-family:;
   font-size: 18px;
-  color: red;
+  color: orange;
 }
 
 .jumbotron {
   text-align: center;
   background: url('../img/output.png');
   width:550px;
+  opacity: 0.9;
   height: 507px;
   border-style: solid;
   border-width: 10px;
   border-color: black;
   background-repeat: repeat-x;
   float:left;
+  margin: inherit;
   /* display: none; */
 }
 
-.ruby {
-  width:250px;
-  height: 407px;
-  float: left;
-  background-color: mediumpurple;
-  overflow: scroll;
-  opacity: 0.9;
-  color: lightgrey;
-  border-style: solid;
-  border-width: 10px;
-  border-color: black;
 
-}
 
-.JS {
-  width:250px;
-  height: 407px;
-  float: center;
-  background-color: mediumpurple;
-  overflow: scroll;
-  opacity: 0.9;
-  color: lightgrey;
-  border-style: solid;
-  border-width: 10px;
-  border-color: black;
 
-}
 
-.CSharp {
-  width:250px;
-  height: 407px;
-  align: center;
-  background-color: mediumpurple;
-  overflow: scroll;
-  opacity: 0.9;
-  color: lightgrey;
-  border-style: solid;
-  border-width: 10px;
-  border-color: black;
-}
 
-.none {
-  width:250px;
-  height: 407px;
-  float: none;
-  background-color: mediumpurple;
-  overflow: scroll;
-  opacity: 0.9;
-  color: lightgrey;
-  border-style: solid;
-  border-width: 10px;
-  border-color: black;
-}
 .ruby, .JS, .CSharp, .none {
   display: none;
 
