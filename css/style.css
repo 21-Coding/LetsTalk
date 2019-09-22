@@ -26,7 +26,7 @@ body {
   text-align: left;
   background: url("../img/gram.jpg");
   background-size: 100% 100%;
-  color: black;
+  color: white;
   overflow: hidden;
   display: none;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ input {
 h1 {
   font-family:;
   font-size: 18px;
-  color: orange;
+  color: white;
 }
 
 .jumbotron {
