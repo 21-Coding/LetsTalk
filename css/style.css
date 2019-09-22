@@ -16,7 +16,9 @@ body {
 
 }
 
-
+.form {
+  color: mediumseagreen;
+}
 
 
 .outcome {
@@ -53,11 +55,29 @@ body {
 
 }
 
+.form {
+  background-color: white;
+}
+
 .bg-dark {
   color:;
 }
 
+.inputname {
+  color: mediumseagreen;
+}
 
+
+
+select {
+  outline-color: mediumseagreen;
+}
+input {
+  outline-color: mediumseagreen;
+}
+select option {
+  background-color: mediumpurple;
+}
 
 .container {
   width:250px;
@@ -66,7 +86,7 @@ body {
   background-color: mediumpurple;
   overflow: scroll;
   opacity: 0.9;
-  color: lightgrey;
+  color: black;
   border-style: solid;
   border-width: 10px;
   border-color: black;
