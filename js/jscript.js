@@ -12,18 +12,18 @@ $(document).ready(function(){
 
     console.log(results);
     if (results >= 8 && results <= 12 ){
-      $(".jumbotron, .ruby").show();
+      $(".outcome, .ruby").show();
       $(".JS, .CSharp, .none").hide();
     } else if (results >= 12 && results <= 25){
-      $(".jumbotron, .JS").show();
+      $(".outcome, .JS").show();
       $(".CSharp, .ruby, .none").hide();
 
     } else if (results >= 26){
-      $(".jumbotron, .CSharp").show();
+      $(".outcome, .CSharp").show();
       $(".ruby, .none, .JS").hide();
 
     } else {
-      $(".jumbotron, .none").show();
+      $(".outcome, .none").show();
       $(".CSharp, .ruby, .JS").hide();
     }
 
